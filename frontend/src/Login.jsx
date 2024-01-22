@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8000/client/login", {
+      .post(`${window.location.origin}/client/login`, {
         email,
         password,
       })

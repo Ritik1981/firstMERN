@@ -15,7 +15,8 @@ const SignUp = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:8000/client/register", {
+      .post(`${window.location.origin}/client/register`, {
+        //http://localhost:8000
         name: name,
         email,
         password,
